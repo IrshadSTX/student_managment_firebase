@@ -26,10 +26,10 @@ class UpdateUsers extends StatefulWidget {
 class _UpdateUsersState extends State<UpdateUsers> {
   final CollectionReference users =
       FirebaseFirestore.instance.collection('users');
-  late final TextEditingController nameController;
-  late final TextEditingController phoneController;
-  late final TextEditingController placeController;
-  late final TextEditingController aboutController;
+  late TextEditingController nameController;
+  late TextEditingController phoneController;
+  late TextEditingController placeController;
+  late TextEditingController aboutController;
   final GlobalKey<FormState> formKey = GlobalKey();
 
   @override
